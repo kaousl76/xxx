@@ -1,0 +1,77 @@
+{
+  "name": "modulex",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build": "parcel build index.html ",
+    "dev": "parcel index.html"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.2",
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.6",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "lodash": "^4.17.21",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "vue": "^2.6.14",
+    "vue-jest": "^3.0.7",
+    "vue-jsonp": "^2.0.0",
+    "vue-loader": "^15.7.0",
+    "vue-router": "^3.5.3",
+    "vuex": "^3.4.0",
+    "webpack": "^5.69.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "autoprefixer": "^10.4.2",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^1.0.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^4.1.2",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^9.5.0",
+    "parcel-bundler": "^1.12.5",
+    "postcss-loader": "^6.2.1",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-template-compiler": "^2.6.14",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
