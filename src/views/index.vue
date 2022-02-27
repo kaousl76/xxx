@@ -2,7 +2,7 @@
   <div class="bodybox">
     <div class="bg">
       <img
-        src="https://api.dujin.org/bing/1920.php"
+        src="https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN"
         :class="{ blur: isblur }"
       />
     </div>
